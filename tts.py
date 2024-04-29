@@ -165,8 +165,7 @@ def preprocess_text(lines: list, length_limit: int) -> (list, int):
         line = line.replace("%", " процентов ")
         line = line.replace(" г.", " году")
         line = line.replace(" гг.", " годах")
-        line = re.sub("д.\s*н.\s*э.", " до нашей эры", line)
-        line = re.sub("н.\s*э.", " нашей эры", line)
+
         line = spell_digits(line)
 
         # print("Processing line: " + line)
