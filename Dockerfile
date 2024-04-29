@@ -3,7 +3,7 @@ FROM python:3.7-alpine
 WORKDIR /code
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-RUN apk add --no-cache gcc musl-dev linux-headers
+RUN apk add --no-cache gcc musl-dev linux-headers git
 COPY requirements.txt requirements.txt
 RUN python -m pip install --upgrade pip
 RUN python -m pip install -U setuptools
