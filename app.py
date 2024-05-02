@@ -24,3 +24,9 @@ iface = gr.Interface(
 )
 
 app = iface.launch
+
+def external_app():
+  iface.launch(server_name="0.0.0.0", server_port=7863)
+
+if __name__ == "__main__":
+  app()
