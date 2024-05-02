@@ -23,4 +23,4 @@ iface = gr.Interface(
   description="Загрузите ваш txt файл с текстом и получите на выходе аудиофайл с озвучкой</br>Работает на базе SileroTTS"
 )
 
-iface.launch()
+app = iface.launch
