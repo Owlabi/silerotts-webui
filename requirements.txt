@@ -3,5 +3,5 @@ torch
 omegaconf
 argparse
 git+https://github.com/Yuego/num2t4ru
-
+uvicorn==0.25.0
 
