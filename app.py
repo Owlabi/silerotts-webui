@@ -8,7 +8,6 @@ def tts(file, speaker):
   # assuming tts.py is in the same directory as this script
   os.system(f"python tts.py --file {file.name} --speaker {speaker}")
   # assuming tts.py outputs a file called output.wav in the same directory
-  print("Finished")
   return "output.wav"
 
 iface = gr.Interface(
@@ -20,7 +19,7 @@ iface = gr.Interface(
   outputs=[
         gr.Audio(type="filepath", autoplay=True),
   ],
-  title="TTS by Neurogen",
+  title="TTS на базе SileroTTS",
   description="Загрузите ваш txt файл с текстом и получите на выходе аудиофайл с озвучкой</br>Работает на базе SileroTTS"
 )
 
